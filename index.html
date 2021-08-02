@@ -186,7 +186,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-08-02 22:32:32 / Modified: 23:34:05" itemprop="dateCreated datePublished" datetime="2021-08-02T22:32:32+08:00">2021-08-02</time>
+      <time title="Created: 2021-08-02 22:32:32 / Modified: 23:44:11" itemprop="dateCreated datePublished" datetime="2021-08-02T22:32:32+08:00">2021-08-02</time>
     </span>
 
   
@@ -206,26 +206,26 @@
 <p>1）排序过程占用了额外空间：</p>
 <p><img src="/2021/08/02/selection%20sort/Untitled.png"></p>
 <p>2）是否可以原地完成？</p>
-<p>![](Untitled 1.png)</p>
+<p><img src="/2021/08/02/selection%20sort/Untitled1.png"></p>
 <p>3）如何设计原地排序？</p>
 <p>直接利用两个索引，遇到最小的则交换，这样就不需要另外开辟空间。</p>
-<p>![](Untitled 2.png)</p>
+<p><img src="/2021/08/02/selection%20sort/Untitled2.png"></p>
 <p>循环不变量：</p>
-<p>![](Untitled 3.png)</p>
+<p><img src="/2021/08/02/selection%20sort/Untitled3.png"></p>
 <h1 id="2、代码实现1，数组版："><a href="#2、代码实现1，数组版：" class="headerlink" title="2、代码实现1，数组版："></a>2、代码实现1，数组版：</h1><p>注意事项：</p>
 <p>1）将方法写成static的类型，以方便可直接在main函数中调用，减少不需要的对象创建：</p>
-<p>![](Untitled 4.png)</p>
+<p><img src="/2021/08/02/selection%20sort/Untitled4.png"></p>
 <p>2）将类的构造函数声明为private，以防止在别的类中创建其对象；注意：虽然此举可以防止在别的类中创建其对象，但是在本类内部还是可以创建该类对象。</p>
-<p>![](Untitled 5.png)</p>
+<p><img src="/2021/08/02/selection%20sort/Untitled5.png"></p>
 <p>3）循环不变量：</p>
-<p>![](Untitled 6.png)</p>
+<p><img src="/2021/08/02/selection%20sort/Untitled6.png"></p>
 <h1 id="3、代码实现，泛型版"><a href="#3、代码实现，泛型版" class="headerlink" title="3、代码实现，泛型版"></a>3、代码实现，泛型版</h1><p>1）函数的类型必须是泛型E；</p>
 <p>2）由于需要对元素进行比较，所以泛型类型又必须实现Comparable<E>；（使用extends）</E></p>
-<p>![](Untitled 7.png)</p>
+<p><img src="/2021/08/02/selection%20sort/Untitled7.png"></p>
 <p>3）swap的函数类型也要写成泛型E，另外数组的数据类型也必须是泛型数组；</p>
-<p>![](Untitled 8.png)</p>
+<p><img src="/2021/08/02/selection%20sort/Untitled8.png"></p>
 <p>4）创建泛型数组，其数据类型必须是类（见注释）：</p>
-<p>![](Untitled 9.png)</p>
+<p><img src="/2021/08/02/selection%20sort/Untitled9.png"></p>
 
       
     </div>
