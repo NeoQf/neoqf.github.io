@@ -2203,15 +2203,6 @@ pre code {
 }
 .post-reward div {
   display: inline-block;
-/*注释此部分
-    if (hexo-config('reward_settings.animation')) {
-      &:hover span {
-        animation: next-roll .1s infinite linear;
-        // The animation may affect :hover of img in dark mode
-        pointer-events: none;
-      }
-    }
-	*/
 }
 .post-reward div span {
   display: block;
