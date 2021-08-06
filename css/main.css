@@ -1760,13 +1760,13 @@ pre code {
 }
 .reading-progress-bar {
   --progress: 0;
-  background: #000000;
-  height: 20px;
+  background: #A9A;
+  height: 2px;
   position: fixed;
   z-index: 1500;
   width: var(--progress);
   left: 0;
-  top: 0;
+  bottom: 0;
 }
 .rtl.post-body p,
 .rtl.post-body a,
