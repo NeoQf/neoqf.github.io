@@ -33,9 +33,7 @@
 ]]></content>
       <categories>
         <category>Algorithm</category>
-        <category>JavaImplementation</category>
-        <category>Liuyubo</category>
-        <category>Algorithm_Serials</category>
+        <category>AlgorithmSerials</category>
         <category>Stage1</category>
         <category>_02_Sorting</category>
         <category>_1_SelectionSort</category>
@@ -44,6 +42,8 @@
         <tag>Algorithm</tag>
         <tag>SortingAlgorithm</tag>
         <tag>SelectionAlgorithm</tag>
+        <tag>Liuyubo</tag>
+        <tag>JavaImpAlgo</tag>
       </tags>
   </entry>
 </search>
