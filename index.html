@@ -164,12 +164,12 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -248,7 +248,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-08-07 12:27:59" itemprop="dateModified" datetime="2021-08-07T12:27:59+08:00">2021-08-07</time>
+        <time title="Modified: 2021-08-07 12:49:31" itemprop="dateModified" datetime="2021-08-07T12:49:31+08:00">2021-08-07</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -260,19 +260,27 @@
         </span>
           , 
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Algorithm/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+          <a href="/categories/Algorithm/JavaImplementation/" itemprop="url" rel="index"><span itemprop="name">JavaImplementation</span></a>
         </span>
           , 
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+          <a href="/categories/Algorithm/JavaImplementation/Liuyubo/" itemprop="url" rel="index"><span itemprop="name">Liuyubo</span></a>
         </span>
           , 
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/" itemprop="url" rel="index"><span itemprop="name">排序</span></a>
+          <a href="/categories/Algorithm/JavaImplementation/Liuyubo/Algorithm-Serials/" itemprop="url" rel="index"><span itemprop="name">Algorithm_Serials</span></a>
         </span>
           , 
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" itemprop="url" rel="index"><span itemprop="name">选择排序</span></a>
+          <a href="/categories/Algorithm/JavaImplementation/Liuyubo/Algorithm-Serials/Stage1/" itemprop="url" rel="index"><span itemprop="name">Stage1</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Algorithm/JavaImplementation/Liuyubo/Algorithm-Serials/Stage1/02-Sorting/" itemprop="url" rel="index"><span itemprop="name">_02_Sorting</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Algorithm/JavaImplementation/Liuyubo/Algorithm-Serials/Stage1/02-Sorting/1-SelectionSort/" itemprop="url" rel="index"><span itemprop="name">_1_SelectionSort</span></a>
         </span>
     </span>
 
@@ -286,7 +294,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="第一章-选择排序"><a href="#第一章-选择排序" class="headerlink" title="第一章 选择排序"></a>第一章 选择排序</h1><h1 id="1、选择排序思想及过程："><a href="#1、选择排序思想及过程：" class="headerlink" title="1、选择排序思想及过程："></a>1、选择排序思想及过程：</h1><p>先把最小的拿出来</p>
+          <h1 id="第一章-选择排序"><a href="#第一章-选择排序" class="headerlink" title="第一章 选择排序"></a>第一章 选择排序</h1><h2 id="1、选择排序思想及过程："><a href="#1、选择排序思想及过程：" class="headerlink" title="1、选择排序思想及过程："></a>1、选择排序思想及过程：</h2><p>先把最小的拿出来</p>
 <p>对于剩下的，再把最小的拿出来</p>
 <p>对于剩下的，再把最小的拿出来</p>
 <p><strong>问题：</strong></p>
@@ -299,14 +307,14 @@
 <p><img src="/2021/08/02/selection%20sort/Untitled2.png"></p>
 <p>循环不变量：</p>
 <p><img src="/2021/08/02/selection%20sort/Untitled3.png"></p>
-<h1 id="2、代码实现1，数组版："><a href="#2、代码实现1，数组版：" class="headerlink" title="2、代码实现1，数组版："></a>2、代码实现1，数组版：</h1><p>注意事项：</p>
+<h2 id="2、代码实现1，数组版："><a href="#2、代码实现1，数组版：" class="headerlink" title="2、代码实现1，数组版："></a>2、代码实现1，数组版：</h2><p>注意事项：</p>
 <p>1）将方法写成static的类型，以方便可直接在main函数中调用，减少不需要的对象创建：</p>
 <p><img src="/2021/08/02/selection%20sort/Untitled4.png"></p>
 <p>2）将类的构造函数声明为private，以防止在别的类中创建其对象；注意：虽然此举可以防止在别的类中创建其对象，但是在本类内部还是可以创建该类对象。</p>
 <p><img src="/2021/08/02/selection%20sort/Untitled5.png"></p>
 <p>3）循环不变量：</p>
 <p><img src="/2021/08/02/selection%20sort/Untitled6.png"></p>
-<h1 id="3、代码实现，泛型版"><a href="#3、代码实现，泛型版" class="headerlink" title="3、代码实现，泛型版"></a>3、代码实现，泛型版</h1><p>1）函数的类型必须是泛型E；</p>
+<h2 id="3、代码实现，泛型版"><a href="#3、代码实现，泛型版" class="headerlink" title="3、代码实现，泛型版"></a>3、代码实现，泛型版</h2><p>1）函数的类型必须是泛型E；</p>
 <p>2）由于需要对元素进行比较，所以泛型类型又必须实现Comparable<E>；（使用extends）</E></p>
 <p><img src="/2021/08/02/selection%20sort/Untitled7.png"></p>
 <p>3）swap的函数类型也要写成泛型E，另外数组的数据类型也必须是泛型数组；</p>
