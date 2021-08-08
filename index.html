@@ -162,16 +162,6 @@
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
-      <div class="site-state-item site-state-categories">
-          <a href="/categories/">
-        <span class="site-state-item-count">5</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-          <a href="/tags/">
-        <span class="site-state-item-count">5</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
   </nav>
 </div>
   <div class="links-of-author site-overview-item animated">
@@ -217,7 +207,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://neoqf.github.io/2021/08/02/SelectionSort/">
+    <link itemprop="mainEntityOfPage" href="https://neoqf.github.io/2021/08/08/readme/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://ss.im5i.com/2021/08/04/PvE5n.jpg">
@@ -230,7 +220,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/02/SelectionSort/" class="post-title-link" itemprop="url">选择排序</a>
+          <a href="/2021/08/08/readme/" class="post-title-link" itemprop="url">Untitled</a>
         </h2>
 
         <div class="post-meta-container">
@@ -240,40 +230,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2021-08-02 22:32:32" itemprop="dateCreated datePublished" datetime="2021-08-02T22:32:32+08:00">2021-08-02</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-08-07 15:40:18" itemprop="dateModified" datetime="2021-08-07T15:40:18+08:00">2021-08-07</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Algorithm/AlgorithmSerials/" itemprop="url" rel="index"><span itemprop="name">AlgorithmSerials</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Algorithm/AlgorithmSerials/Stage1/" itemprop="url" rel="index"><span itemprop="name">Stage1</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Algorithm/AlgorithmSerials/Stage1/Sorting/" itemprop="url" rel="index"><span itemprop="name">Sorting</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Algorithm/AlgorithmSerials/Stage1/Sorting/SelectionSort/" itemprop="url" rel="index"><span itemprop="name">SelectionSort</span></a>
-        </span>
+      <time title="Created: 2021-08-08 20:49:03 / Modified: 21:03:24" itemprop="dateCreated datePublished" datetime="2021-08-08T20:49:03+08:00">2021-08-08</time>
     </span>
 
   
@@ -286,33 +245,14 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="第一章-选择排序"><a href="#第一章-选择排序" class="headerlink" title="第一章 选择排序"></a>第一章 选择排序</h1><h2 id="1、选择排序思想及过程："><a href="#1、选择排序思想及过程：" class="headerlink" title="1、选择排序思想及过程："></a>1、选择排序思想及过程：</h2><p>先把最小的拿出来</p>
-<p>对于剩下的，再把最小的拿出来</p>
-<p>对于剩下的，再把最小的拿出来</p>
-<p><strong>问题：</strong></p>
-<p>1）排序过程占用了额外空间：</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled.png"></p>
-<p>2）是否可以原地完成？</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled1.png"></p>
-<p>3）如何设计原地排序？</p>
-<p>直接利用两个索引，遇到最小的则交换，这样就不需要另外开辟空间。</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled2.png"></p>
-<p>循环不变量：</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled3.png"></p>
-<h2 id="2、代码实现1，数组版："><a href="#2、代码实现1，数组版：" class="headerlink" title="2、代码实现1，数组版："></a>2、代码实现1，数组版：</h2><p>注意事项：</p>
-<p>1）将方法写成static的类型，以方便可直接在main函数中调用，减少不需要的对象创建：</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled4.png"></p>
-<p>2）将类的构造函数声明为private，以防止在别的类中创建其对象；注意：虽然此举可以防止在别的类中创建其对象，但是在本类内部还是可以创建该类对象。</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled5.png"></p>
-<p>3）循环不变量：</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled6.png"></p>
-<h2 id="3、代码实现，泛型版"><a href="#3、代码实现，泛型版" class="headerlink" title="3、代码实现，泛型版"></a>3、代码实现，泛型版</h2><p>1）函数的类型必须是泛型E；</p>
-<p>2）由于需要对元素进行比较，所以泛型类型又必须实现Comparable<E>；（使用extends）</E></p>
-<p><img src="/2021/08/02/SelectionSort/Untitled7.png"></p>
-<p>3）swap的函数类型也要写成泛型E，另外数组的数据类型也必须是泛型数组；</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled8.png"></p>
-<p>4）创建泛型数组，其数据类型必须是类（见注释）：</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled9.png"></p>
+          <h1 id="博客组成结构："><a href="#博客组成结构：" class="headerlink" title="博客组成结构："></a>博客组成结构：</h1><p>0101010101——    _01Algoritm_01AlgorithmSerials_01Stage1_01Sorting_01SelectionSort</p>
+<p><strong>即一共5级目录：0102030405</strong></p>
+<p>01——Algoritm；</p>
+<p>02——AlgorithmSerials；</p>
+<p>03——Stage1；</p>
+<p>04——Sorting；</p>
+<p>05——SelectionSort；</p>
+<p>层级不够5的要填满0.</p>
 
       
     </div>

@@ -1,49 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>选择排序</title>
-    <url>/2021/08/02/SelectionSort/</url>
-    <content><![CDATA[<h1 id="第一章-选择排序"><a href="#第一章-选择排序" class="headerlink" title="第一章 选择排序"></a>第一章 选择排序</h1><h2 id="1、选择排序思想及过程："><a href="#1、选择排序思想及过程：" class="headerlink" title="1、选择排序思想及过程："></a>1、选择排序思想及过程：</h2><p>先把最小的拿出来</p>
-<p>对于剩下的，再把最小的拿出来</p>
-<p>对于剩下的，再把最小的拿出来</p>
-<p><strong>问题：</strong></p>
-<p>1）排序过程占用了额外空间：</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled.png"></p>
-<p>2）是否可以原地完成？</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled1.png"></p>
-<p>3）如何设计原地排序？</p>
-<p>直接利用两个索引，遇到最小的则交换，这样就不需要另外开辟空间。</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled2.png"></p>
-<p>循环不变量：</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled3.png"></p>
-<h2 id="2、代码实现1，数组版："><a href="#2、代码实现1，数组版：" class="headerlink" title="2、代码实现1，数组版："></a>2、代码实现1，数组版：</h2><p>注意事项：</p>
-<p>1）将方法写成static的类型，以方便可直接在main函数中调用，减少不需要的对象创建：</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled4.png"></p>
-<p>2）将类的构造函数声明为private，以防止在别的类中创建其对象；注意：虽然此举可以防止在别的类中创建其对象，但是在本类内部还是可以创建该类对象。</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled5.png"></p>
-<p>3）循环不变量：</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled6.png"></p>
-<h2 id="3、代码实现，泛型版"><a href="#3、代码实现，泛型版" class="headerlink" title="3、代码实现，泛型版"></a>3、代码实现，泛型版</h2><p>1）函数的类型必须是泛型E；</p>
-<p>2）由于需要对元素进行比较，所以泛型类型又必须实现Comparable<E>；（使用extends）</E></p>
-<p><img src="/2021/08/02/SelectionSort/Untitled7.png"></p>
-<p>3）swap的函数类型也要写成泛型E，另外数组的数据类型也必须是泛型数组；</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled8.png"></p>
-<p>4）创建泛型数组，其数据类型必须是类（见注释）：</p>
-<p><img src="/2021/08/02/SelectionSort/Untitled9.png"></p>
+    <title></title>
+    <url>/2021/08/08/readme/</url>
+    <content><![CDATA[<h1 id="博客组成结构："><a href="#博客组成结构：" class="headerlink" title="博客组成结构："></a>博客组成结构：</h1><p>0101010101——    _01Algoritm_01AlgorithmSerials_01Stage1_01Sorting_01SelectionSort</p>
+<p><strong>即一共5级目录：0102030405</strong></p>
+<p>01——Algoritm；</p>
+<p>02——AlgorithmSerials；</p>
+<p>03——Stage1；</p>
+<p>04——Sorting；</p>
+<p>05——SelectionSort；</p>
+<p>层级不够5的要填满0.</p>
 ]]></content>
-      <categories>
-        <category>Algorithm</category>
-        <category>AlgorithmSerials</category>
-        <category>Stage1</category>
-        <category>Sorting</category>
-        <category>SelectionSort</category>
-      </categories>
-      <tags>
-        <tag>Algorithm</tag>
-        <tag>SortingAlgorithm</tag>
-        <tag>Liuyubo</tag>
-        <tag>JavaImpAlgo</tag>
-        <tag>SelectionSorting</tag>
-      </tags>
   </entry>
 </search>
