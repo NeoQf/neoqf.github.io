@@ -23,7 +23,9 @@
 <p><img src="/2021/08/02/01_Algorithm/01_LiuyuboAlgo/01_AlgoSerials/Stage1/01_Sorting/01_SelectionSort/Untitled5.png"></p>
 <p>3）循环不变量：</p>
 <p><img src="/2021/08/02/01_Algorithm/01_LiuyuboAlgo/01_AlgoSerials/Stage1/01_Sorting/01_SelectionSort/Untitled6.png"></p>
-<h2 id="3、代码实现，泛型版"><a href="#3、代码实现，泛型版" class="headerlink" title="3、代码实现，泛型版"></a>3、代码实现，泛型版</h2><p>1）函数的类型必须是泛型E；</p>
+<h2 id="3、代码实现，泛型版"><a href="#3、代码实现，泛型版" class="headerlink" title="3、代码实现，泛型版"></a>3、代码实现，泛型版</h2><span id="more"></span>
+
+<p>1）函数的类型必须是泛型E；</p>
 <p>2）由于需要对元素进行比较，所以泛型类型又必须实现Comparable<E>；（使用extends）</E></p>
 <p><img src="/2021/08/02/01_Algorithm/01_LiuyuboAlgo/01_AlgoSerials/Stage1/01_Sorting/01_SelectionSort/Untitled7.png"></p>
 <p>3）swap的函数类型也要写成泛型E，另外数组的数据类型也必须是泛型数组；</p>
