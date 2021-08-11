@@ -20,12 +20,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"neoqf.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}}</script><script src="/js/config.js"></script>
-<meta name="description" content="第一章 选择排序1、选择排序思想及过程：先把最小的拿出来 对于剩下的，再把最小的拿出来 对于剩下的，再把最小的拿出来 问题： 1）排序过程占用了额外空间：  2）是否可以原地完成？">
+<meta name="description" content="第一章 选择排序1、选择排序思想及过程：先把最小的拿出来 对于剩下的，再把最小的拿出来 对于剩下的，再把最小的拿出来 问题： 1）排序过程占用了额外空间：  2）是否可以原地完成？  3）如何设计原地排序？ 直接利用两个索引，遇到最小的则交换，这样就不需要另外开辟空间。  循环不变量：  2、代码实现1，数组版：注意事项： 1）将方法写成static的类型，以方便可直接在main函数中调用，减少不">
 <meta property="og:type" content="article">
 <meta property="og:title" content="选择排序">
 <meta property="og:url" content="https://neoqf.github.io/2021/08/02/01_Algorithm/01_LiuyuboAlgo/01_AlgoSerials/Stage1/01_Sorting/01_SelectionSort/index.html">
 <meta property="og:site_name" content="LQF&#39;s Blog">
-<meta property="og:description" content="第一章 选择排序1、选择排序思想及过程：先把最小的拿出来 对于剩下的，再把最小的拿出来 对于剩下的，再把最小的拿出来 问题： 1）排序过程占用了额外空间：  2）是否可以原地完成？">
+<meta property="og:description" content="第一章 选择排序1、选择排序思想及过程：先把最小的拿出来 对于剩下的，再把最小的拿出来 对于剩下的，再把最小的拿出来 问题： 1）排序过程占用了额外空间：  2）是否可以原地完成？  3）如何设计原地排序？ 直接利用两个索引，遇到最小的则交换，这样就不需要另外开辟空间。  循环不变量：  2、代码实现1，数组版：注意事项： 1）将方法写成static的类型，以方便可直接在main函数中调用，减少不">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://neoqf.github.io/2021/08/02/01_Algorithm/01_LiuyuboAlgo/01_AlgoSerials/Stage1/01_Sorting/01_SelectionSort/Untitled.png">
 <meta property="og:image" content="https://neoqf.github.io/2021/08/02/01_Algorithm/01_LiuyuboAlgo/01_AlgoSerials/Stage1/01_Sorting/01_SelectionSort/Untitled1.png">
