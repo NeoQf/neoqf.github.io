@@ -53,6 +53,8 @@
     <title>动态链接</title>
     <url>/2021/08/23/z_C_OS_books/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB%EF%BC%9A%E9%93%BE%E6%8E%A5%E3%80%81%E8%A3%85%E8%BD%BD%E4%B8%8E%E5%BA%93%E3%80%8B/Ch7_%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5/</url>
     <content><![CDATA[<h1 id="Ch7-动态链接"><a href="#Ch7-动态链接" class="headerlink" title="Ch7 动态链接"></a>Ch7 动态链接</h1><h1 id="7-1-为什么要动态链接"><a href="#7-1-为什么要动态链接" class="headerlink" title="7.1 为什么要动态链接"></a>7.1 为什么要动态链接</h1><h2 id="1-静态链接的缺点"><a href="#1-静态链接的缺点" class="headerlink" title="1 静态链接的缺点"></a>1 静态链接的缺点</h2><h3 id="1-1-内存和磁盘空间占用"><a href="#1-1-内存和磁盘空间占用" class="headerlink" title="1.1 内存和磁盘空间占用"></a>1.1 内存和磁盘空间占用</h3><p><strong>每个程序都将包含的库函数直接打包使用，使得占用内存和磁盘大。</strong>如下图1所示，其中Program1和Program2分别包含Program1.o和Program2.o两程序开发和发个模块，并且它们还共用Lib.o两个模块。静态链接的做法是，将它们存两份副本，所以造成资源浪费。</p>
+<span id="more"></span>
+
 <p><img src="/2021/08/23/z_C_OS_books/%E3%80%8A%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB%EF%BC%9A%E9%93%BE%E6%8E%A5%E3%80%81%E8%A3%85%E8%BD%BD%E4%B8%8E%E5%BA%93%E3%80%8B/Ch7_%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5/Untitled1.png"></p>
 <center>图1 静态链接时文件在内存中的副本</center>
 
